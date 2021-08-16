@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	unset($_SESSION['AdminLogin']);
+	header("Location:index.php");
+	if(!isset($_SESSION['AdminLogin']))
+	{
+		header("Location:index.php");
+	}
+?>

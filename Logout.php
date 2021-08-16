@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	unset($_SESSION['FacultyLogin']);
+	header("Location:index.php");
+	if(!isset($_SESSION['FacultyLogin']))
+	{
+		header("Location:index.php");
+	}
+?>
